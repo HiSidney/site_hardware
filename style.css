@@ -10,17 +10,17 @@ body {
 }
 
 h1 {
+    font-size: 27px;
     text-align: center;
-    margin-top: 70px;
 }
 
 h2 {
+    font-size: 22px;
     text-align: center;
-    margin-top: 30px;
 }
 
 body {
-    margin-bottom: 100px;
+    margin-bottom: auto;
 }
 
 a {
@@ -75,21 +75,33 @@ img {
     text-align: center;
 }
 
-.section1 {
+#main {
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 1fr 1fr;
-    margin: 0 auto;
-    margin-top: 50px;
 }
 
 .anuncio {
+    display: grid;
     grid-column: 2;
-    grid-row: 1/2;
+    grid-row: 1 / 2;
+    margin-top: 20px;
+}
+
+.section1 {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 50px;
+}
+
+.info_prin {
+    margin-top: 30px;
 }
 
 .texto {
-    padding-left: 50px;
     grid-column: 1;
     grid-row: 1;
 }
@@ -101,6 +113,7 @@ img {
 .section2 {
     text-align: center;
     display: grid;
+    grid-column: 1;
     grid-template-columns: repeat(5, 20%);
     grid-gap: 20px; 
 }
